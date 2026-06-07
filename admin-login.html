@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | Monster Gym</title>
+  <meta name="description" content="Monster Gym admin sign-in." />
+  <link rel="icon" href="assets/img/icon.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>(function(){try{var t=localStorage.getItem('mg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-page="">
+  <div id="site-header"></div>
+
+  <main>
+    <div class="auth-wrap">
+      <div class="form-card">
+        <h1>Admin Login</h1>
+        <p class="form-sub">Restricted area — staff only</p>
+        <form id="adminForm" novalidate>
+          <div class="field">
+            <label for="username">Admin ID</label>
+            <div class="control"><input type="text" id="username" name="username" placeholder="Username" autocomplete="username" /></div>
+            <span class="error"></span>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="control">
+              <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" />
+              <button type="button" class="pw-toggle" aria-label="Show password">👁️</button>
+            </div>
+            <span class="error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Log in</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

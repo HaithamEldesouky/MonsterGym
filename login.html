@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Monster Gym</title>
+  <meta name="description" content="Sign in to your Monster Gym account." />
+  <link rel="icon" href="assets/img/icon.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>(function(){try{var t=localStorage.getItem('mg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-page="">
+  <div id="site-header"></div>
+
+  <main>
+    <div class="auth-wrap">
+      <div class="form-card">
+        <h1>Welcome back</h1>
+        <p class="form-sub">Sign in to continue to Monster Gym</p>
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <div class="control"><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" /></div>
+            <span class="error"></span>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="control">
+              <input type="password" id="password" name="password" placeholder="Your password" autocomplete="current-password" />
+              <button type="button" class="pw-toggle" aria-label="Show password">👁️</button>
+            </div>
+            <span class="error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Log in</button>
+        </form>
+
+        <div class="divider">OR</div>
+        <div class="social-row">
+          <a href="https://www.facebook.com/" aria-label="Continue with Facebook" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.png" alt="Facebook" /></a>
+          <a href="https://twitter.com/login" aria-label="Continue with Twitter" target="_blank" rel="noopener noreferrer"><img src="assets/img/twitter.jpg" alt="Twitter" /></a>
+        </div>
+
+        <p class="form-foot">Don't have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

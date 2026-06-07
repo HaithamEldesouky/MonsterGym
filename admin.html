@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | Monster Gym</title>
+  <meta name="description" content="Monster Gym admin dashboard." />
+  <link rel="icon" href="assets/img/icon.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>(function(){try{var t=localStorage.getItem('mg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-page="">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Dashboard</span>
+        <h1>Admin Panel</h1>
+        <p>Manage members, information and access from one place.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="admin-grid">
+          <div class="admin-tile" data-action="Add information"><span class="tile-icon">➕</span>Add information</div>
+          <div class="admin-tile" data-action="Edit information"><span class="tile-icon">✏️</span>Edit information</div>
+          <div class="admin-tile" data-action="Remove information"><span class="tile-icon">🗑️</span>Remove information</div>
+          <div class="admin-tile" data-action="Users list"><span class="tile-icon">👥</span>Users list</div>
+          <div class="admin-tile" data-action="Ban user"><span class="tile-icon">🚫</span>Ban user</div>
+          <a class="admin-tile" href="index.html" style="text-decoration:none;color:inherit"><span class="tile-icon">🔓</span>Log out</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js" defer></script>
+  <script>
+    // Demo placeholders for the admin actions (no backend in this front-end project)
+    document.querySelectorAll('.admin-tile[data-action]').forEach(function (tile) {
+      tile.addEventListener('click', function () {
+        var t = document.querySelector('.toast');
+        if (!t) { t = document.createElement('div'); t.className = 'toast'; document.body.appendChild(t); }
+        t.textContent = '"' + tile.dataset.action + '" is a demo action.';
+        requestAnimationFrame(function () { t.classList.add('show'); });
+        setTimeout(function () { t.classList.remove('show'); }, 2400);
+      });
+    });
+  </script>
+</body>
+</html>

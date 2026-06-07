@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up | Monster Gym</title>
+  <meta name="description" content="Create your Monster Gym account and start training today." />
+  <link rel="icon" href="assets/img/icon.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>(function(){try{var t=localStorage.getItem('mg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-page="">
+  <div id="site-header"></div>
+
+  <main>
+    <div class="auth-wrap">
+      <div class="form-card wide">
+        <h1>Create your account</h1>
+        <p class="form-sub">Join Monster Gym in less than a minute</p>
+        <form id="signupForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="firstname">First name</label>
+              <div class="control"><input type="text" id="firstname" name="firstname" placeholder="First name" /></div>
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="lastname">Last name</label>
+              <div class="control"><input type="text" id="lastname" name="lastname" placeholder="Last name" /></div>
+              <span class="error"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <div class="control"><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" /></div>
+            <span class="error"></span>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="control">
+              <input type="password" id="password" name="password" placeholder="At least 6 characters" autocomplete="new-password" />
+              <button type="button" class="pw-toggle" aria-label="Show password">👁️</button>
+            </div>
+            <span class="error"></span>
+          </div>
+
+          <div class="field">
+            <label for="confirm">Confirm password</label>
+            <div class="control"><input type="password" id="confirm" name="confirm" placeholder="Re-enter your password" autocomplete="new-password" /></div>
+            <span class="error"></span>
+          </div>
+
+          <div class="field">
+            <label for="birthday">Birthday</label>
+            <div class="control"><input type="date" id="birthday" name="birthday" /></div>
+            <span class="error"></span>
+          </div>
+
+          <div class="field">
+            <label>Gender</label>
+            <div class="radio-group">
+              <span class="radio-pill"><input type="radio" id="g-male" name="gender" value="male" checked /><label for="g-male">Male</label></span>
+              <span class="radio-pill"><input type="radio" id="g-female" name="gender" value="female" /><label for="g-female">Female</label></span>
+              <span class="radio-pill"><input type="radio" id="g-other" name="gender" value="other" /><label for="g-other">Other</label></span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Sign up</button>
+        </form>
+        <p class="form-foot">Already have an account? <a href="login.html">Log in</a></p>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

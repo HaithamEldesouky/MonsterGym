@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership & Booking | Monster Gym</title>
+  <meta name="description" content="Choose a Monster Gym membership plan and book your start date." />
+  <link rel="icon" href="assets/img/icon.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>(function(){try{var t=localStorage.getItem('mg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-page="booking">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Membership</span>
+        <h1>Pick a plan that fits you</h1>
+        <p>Flexible memberships from one month to a full year. We got what you've been searching for!</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="plans" style="margin-bottom:56px">
+          <div class="plan"><div class="plan-name">1 Month</div><div class="price">600<small> EGP</small></div></div>
+          <div class="plan"><div class="plan-name">2 Months</div><div class="price">1200<small> EGP</small></div></div>
+          <div class="plan featured"><div class="badge">Popular</div><div class="plan-name">3 Months</div><div class="price">1800<small> EGP</small></div></div>
+          <div class="plan"><div class="plan-name">6 Months</div><div class="price">2800<small> EGP</small></div></div>
+          <div class="plan"><div class="plan-name">1 Year</div><div class="price">4000<small> EGP</small></div></div>
+        </div>
+
+        <div class="form-card wide" style="margin:0 auto">
+          <h1>Book your membership</h1>
+          <p class="form-sub">Fill in your details and we'll get you started.</p>
+          <form id="bookingForm" novalidate>
+            <div class="field">
+              <label for="fullname">Full name</label>
+              <div class="control"><input type="text" id="fullname" name="fullname" placeholder="Your name" /></div>
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="startdate">Start date</label>
+              <div class="control"><input type="date" id="startdate" name="startdate" /></div>
+              <span class="error"></span>
+            </div>
+
+            <div class="field">
+              <label>Membership plan</label>
+              <div class="radio-group">
+                <span class="radio-pill"><input type="radio" id="p1" name="plan" value="600" checked /><label for="p1">1 Month<br />600 EGP</label></span>
+                <span class="radio-pill"><input type="radio" id="p2" name="plan" value="1200" /><label for="p2">2 Months<br />1200 EGP</label></span>
+                <span class="radio-pill"><input type="radio" id="p3" name="plan" value="1800" /><label for="p3">3 Months<br />1800 EGP</label></span>
+                <span class="radio-pill"><input type="radio" id="p4" name="plan" value="2800" /><label for="p4">6 Months<br />2800 EGP</label></span>
+                <span class="radio-pill"><input type="radio" id="p5" name="plan" value="4000" /><label for="p5">1 Year<br />4000 EGP</label></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Payment method</label>
+              <div class="radio-group">
+                <span class="radio-pill"><input type="radio" id="pay-cash" name="payment" value="Cash" checked /><label for="pay-cash">💵 Cash</label></span>
+                <span class="radio-pill"><input type="radio" id="pay-card" name="payment" value="Credit card" /><label for="pay-card">💳 Credit card</label></span>
+              </div>
+            </div>
+
+            <div class="summary">
+              <span>Total price</span>
+              <span class="amount" id="summaryPrice">600 EGP</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Confirm booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
