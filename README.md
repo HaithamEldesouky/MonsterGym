@@ -1,5 +1,11 @@
 # 🏋️ Monster Gym
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![No build step](https://img.shields.io/badge/build-none-brightgreen)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 A modern, responsive front-end website for a fictional gym — **"Go hard or go home."**
 
 > Originally built in 2020 as one of my first web-development projects, then fully
@@ -37,6 +43,16 @@ A modern, responsive front-end website for a fictional gym — **"Go hard or go 
     └── img/            # Logo, icons, wallpapers, gallery photos
 ```
 
+## 📚 Documentation
+
+Detailed docs live in the [`docs/`](docs/) folder:
+
+- [Architecture](docs/ARCHITECTURE.md) — how the site is structured (shared shell, theming, forms)
+- [Pages reference](docs/PAGES.md) — every page, the navigation graph and each form's fields/rules
+- [Development guide](docs/DEVELOPMENT.md) — running locally, conventions, adding a page
+- [Deployment](docs/DEPLOYMENT.md) — GitHub Pages and other static hosts
+- [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md)
+
 ## 🚀 Running it
 
 It's a static site, so just open `index.html` in a browser.
@@ -62,3 +78,7 @@ client-side only — there is no backend, and no real data is stored or processe
 ## 🛠️ Built with
 
 HTML5 · CSS3 (custom properties, flexbox, grid) · Vanilla JavaScript (ES6)
+
+## 📄 License
+
+Released under the [MIT License](LICENSE). © 2020-2026 Haitham Eldesouky.
